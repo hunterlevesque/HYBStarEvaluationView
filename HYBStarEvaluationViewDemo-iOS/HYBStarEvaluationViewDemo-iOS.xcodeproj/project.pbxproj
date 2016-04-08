@@ -1,0 +1,543 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C73D5A301CB7A22000508D77 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C73D5A2F1CB7A22000508D77 /* main.m */; };
+		C73D5A331CB7A22000508D77 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C73D5A321CB7A22000508D77 /* AppDelegate.m */; };
+		C73D5A361CB7A22000508D77 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C73D5A351CB7A22000508D77 /* ViewController.m */; };
+		C73D5A391CB7A22000508D77 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C73D5A371CB7A22000508D77 /* Main.storyboard */; };
+		C73D5A3B1CB7A22000508D77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C73D5A3A1CB7A22000508D77 /* Assets.xcassets */; };
+		C73D5A3E1CB7A22000508D77 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C73D5A3C1CB7A22000508D77 /* LaunchScreen.storyboard */; };
+		C73D5A491CB7A22000508D77 /* HYBStarEvaluationViewDemo_iOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C73D5A481CB7A22000508D77 /* HYBStarEvaluationViewDemo_iOSTests.m */; };
+		C73D5A541CB7A22000508D77 /* HYBStarEvaluationViewDemo_iOSUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C73D5A531CB7A22000508D77 /* HYBStarEvaluationViewDemo_iOSUITests.m */; };
+		C73D5A661CB7A23900508D77 /* HYBStarEvaluationView.m in Sources */ = {isa = PBXBuildFile; fileRef = C73D5A631CB7A23900508D77 /* HYBStarEvaluationView.m */; };
+		C73D5A671CB7A23900508D77 /* star_gray.png in Resources */ = {isa = PBXBuildFile; fileRef = C73D5A641CB7A23900508D77 /* star_gray.png */; };
+		C73D5A681CB7A23900508D77 /* star_yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = C73D5A651CB7A23900508D77 /* star_yellow.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C73D5A451CB7A22000508D77 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C73D5A231CB7A21F00508D77 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C73D5A2A1CB7A21F00508D77;
+			remoteInfo = "HYBStarEvaluationViewDemo-iOS";
+		};
+		C73D5A501CB7A22000508D77 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C73D5A231CB7A21F00508D77 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C73D5A2A1CB7A21F00508D77;
+			remoteInfo = "HYBStarEvaluationViewDemo-iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C73D5A2B1CB7A22000508D77 /* HYBStarEvaluationViewDemo-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HYBStarEvaluationViewDemo-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C73D5A2F1CB7A22000508D77 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C73D5A311CB7A22000508D77 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C73D5A321CB7A22000508D77 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C73D5A341CB7A22000508D77 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		C73D5A351CB7A22000508D77 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C73D5A381CB7A22000508D77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C73D5A3A1CB7A22000508D77 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C73D5A3D1CB7A22000508D77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C73D5A3F1CB7A22000508D77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C73D5A441CB7A22000508D77 /* HYBStarEvaluationViewDemo-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "HYBStarEvaluationViewDemo-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C73D5A481CB7A22000508D77 /* HYBStarEvaluationViewDemo_iOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HYBStarEvaluationViewDemo_iOSTests.m; sourceTree = "<group>"; };
+		C73D5A4A1CB7A22000508D77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C73D5A4F1CB7A22000508D77 /* HYBStarEvaluationViewDemo-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "HYBStarEvaluationViewDemo-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C73D5A531CB7A22000508D77 /* HYBStarEvaluationViewDemo_iOSUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HYBStarEvaluationViewDemo_iOSUITests.m; sourceTree = "<group>"; };
+		C73D5A551CB7A22000508D77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C73D5A621CB7A23900508D77 /* HYBStarEvaluationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYBStarEvaluationView.h; sourceTree = "<group>"; };
+		C73D5A631CB7A23900508D77 /* HYBStarEvaluationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYBStarEvaluationView.m; sourceTree = "<group>"; };
+		C73D5A641CB7A23900508D77 /* star_gray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star_gray.png; sourceTree = "<group>"; };
+		C73D5A651CB7A23900508D77 /* star_yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star_yellow.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C73D5A281CB7A21F00508D77 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C73D5A411CB7A22000508D77 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C73D5A4C1CB7A22000508D77 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C73D5A221CB7A21F00508D77 = {
+			isa = PBXGroup;
+			children = (
+				C73D5A2D1CB7A22000508D77 /* HYBStarEvaluationViewDemo-iOS */,
+				C73D5A471CB7A22000508D77 /* HYBStarEvaluationViewDemo-iOSTests */,
+				C73D5A521CB7A22000508D77 /* HYBStarEvaluationViewDemo-iOSUITests */,
+				C73D5A2C1CB7A22000508D77 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C73D5A2C1CB7A22000508D77 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C73D5A2B1CB7A22000508D77 /* HYBStarEvaluationViewDemo-iOS.app */,
+				C73D5A441CB7A22000508D77 /* HYBStarEvaluationViewDemo-iOSTests.xctest */,
+				C73D5A4F1CB7A22000508D77 /* HYBStarEvaluationViewDemo-iOSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C73D5A2D1CB7A22000508D77 /* HYBStarEvaluationViewDemo-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				C73D5A611CB7A23900508D77 /* HYBStarEvaluationView */,
+				C73D5A311CB7A22000508D77 /* AppDelegate.h */,
+				C73D5A321CB7A22000508D77 /* AppDelegate.m */,
+				C73D5A341CB7A22000508D77 /* ViewController.h */,
+				C73D5A351CB7A22000508D77 /* ViewController.m */,
+				C73D5A371CB7A22000508D77 /* Main.storyboard */,
+				C73D5A3A1CB7A22000508D77 /* Assets.xcassets */,
+				C73D5A3C1CB7A22000508D77 /* LaunchScreen.storyboard */,
+				C73D5A3F1CB7A22000508D77 /* Info.plist */,
+				C73D5A2E1CB7A22000508D77 /* Supporting Files */,
+			);
+			path = "HYBStarEvaluationViewDemo-iOS";
+			sourceTree = "<group>";
+		};
+		C73D5A2E1CB7A22000508D77 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C73D5A2F1CB7A22000508D77 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C73D5A471CB7A22000508D77 /* HYBStarEvaluationViewDemo-iOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				C73D5A481CB7A22000508D77 /* HYBStarEvaluationViewDemo_iOSTests.m */,
+				C73D5A4A1CB7A22000508D77 /* Info.plist */,
+			);
+			path = "HYBStarEvaluationViewDemo-iOSTests";
+			sourceTree = "<group>";
+		};
+		C73D5A521CB7A22000508D77 /* HYBStarEvaluationViewDemo-iOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C73D5A531CB7A22000508D77 /* HYBStarEvaluationViewDemo_iOSUITests.m */,
+				C73D5A551CB7A22000508D77 /* Info.plist */,
+			);
+			path = "HYBStarEvaluationViewDemo-iOSUITests";
+			sourceTree = "<group>";
+		};
+		C73D5A611CB7A23900508D77 /* HYBStarEvaluationView */ = {
+			isa = PBXGroup;
+			children = (
+				C73D5A621CB7A23900508D77 /* HYBStarEvaluationView.h */,
+				C73D5A631CB7A23900508D77 /* HYBStarEvaluationView.m */,
+				C73D5A641CB7A23900508D77 /* star_gray.png */,
+				C73D5A651CB7A23900508D77 /* star_yellow.png */,
+			);
+			path = HYBStarEvaluationView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C73D5A2A1CB7A21F00508D77 /* HYBStarEvaluationViewDemo-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C73D5A581CB7A22000508D77 /* Build configuration list for PBXNativeTarget "HYBStarEvaluationViewDemo-iOS" */;
+			buildPhases = (
+				C73D5A271CB7A21F00508D77 /* Sources */,
+				C73D5A281CB7A21F00508D77 /* Frameworks */,
+				C73D5A291CB7A21F00508D77 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "HYBStarEvaluationViewDemo-iOS";
+			productName = "HYBStarEvaluationViewDemo-iOS";
+			productReference = C73D5A2B1CB7A22000508D77 /* HYBStarEvaluationViewDemo-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C73D5A431CB7A22000508D77 /* HYBStarEvaluationViewDemo-iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C73D5A5B1CB7A22000508D77 /* Build configuration list for PBXNativeTarget "HYBStarEvaluationViewDemo-iOSTests" */;
+			buildPhases = (
+				C73D5A401CB7A22000508D77 /* Sources */,
+				C73D5A411CB7A22000508D77 /* Frameworks */,
+				C73D5A421CB7A22000508D77 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C73D5A461CB7A22000508D77 /* PBXTargetDependency */,
+			);
+			name = "HYBStarEvaluationViewDemo-iOSTests";
+			productName = "HYBStarEvaluationViewDemo-iOSTests";
+			productReference = C73D5A441CB7A22000508D77 /* HYBStarEvaluationViewDemo-iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C73D5A4E1CB7A22000508D77 /* HYBStarEvaluationViewDemo-iOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C73D5A5E1CB7A22000508D77 /* Build configuration list for PBXNativeTarget "HYBStarEvaluationViewDemo-iOSUITests" */;
+			buildPhases = (
+				C73D5A4B1CB7A22000508D77 /* Sources */,
+				C73D5A4C1CB7A22000508D77 /* Frameworks */,
+				C73D5A4D1CB7A22000508D77 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C73D5A511CB7A22000508D77 /* PBXTargetDependency */,
+			);
+			name = "HYBStarEvaluationViewDemo-iOSUITests";
+			productName = "HYBStarEvaluationViewDemo-iOSUITests";
+			productReference = C73D5A4F1CB7A22000508D77 /* HYBStarEvaluationViewDemo-iOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C73D5A231CB7A21F00508D77 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "北京自造星球科技有限公司";
+				TargetAttributes = {
+					C73D5A2A1CB7A21F00508D77 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					C73D5A431CB7A22000508D77 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = C73D5A2A1CB7A21F00508D77;
+					};
+					C73D5A4E1CB7A22000508D77 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = C73D5A2A1CB7A21F00508D77;
+					};
+				};
+			};
+			buildConfigurationList = C73D5A261CB7A21F00508D77 /* Build configuration list for PBXProject "HYBStarEvaluationViewDemo-iOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C73D5A221CB7A21F00508D77;
+			productRefGroup = C73D5A2C1CB7A22000508D77 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C73D5A2A1CB7A21F00508D77 /* HYBStarEvaluationViewDemo-iOS */,
+				C73D5A431CB7A22000508D77 /* HYBStarEvaluationViewDemo-iOSTests */,
+				C73D5A4E1CB7A22000508D77 /* HYBStarEvaluationViewDemo-iOSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C73D5A291CB7A21F00508D77 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C73D5A671CB7A23900508D77 /* star_gray.png in Resources */,
+				C73D5A681CB7A23900508D77 /* star_yellow.png in Resources */,
+				C73D5A3E1CB7A22000508D77 /* LaunchScreen.storyboard in Resources */,
+				C73D5A3B1CB7A22000508D77 /* Assets.xcassets in Resources */,
+				C73D5A391CB7A22000508D77 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C73D5A421CB7A22000508D77 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C73D5A4D1CB7A22000508D77 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C73D5A271CB7A21F00508D77 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C73D5A361CB7A22000508D77 /* ViewController.m in Sources */,
+				C73D5A331CB7A22000508D77 /* AppDelegate.m in Sources */,
+				C73D5A661CB7A23900508D77 /* HYBStarEvaluationView.m in Sources */,
+				C73D5A301CB7A22000508D77 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C73D5A401CB7A22000508D77 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C73D5A491CB7A22000508D77 /* HYBStarEvaluationViewDemo_iOSTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C73D5A4B1CB7A22000508D77 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C73D5A541CB7A22000508D77 /* HYBStarEvaluationViewDemo_iOSUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C73D5A461CB7A22000508D77 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C73D5A2A1CB7A21F00508D77 /* HYBStarEvaluationViewDemo-iOS */;
+			targetProxy = C73D5A451CB7A22000508D77 /* PBXContainerItemProxy */;
+		};
+		C73D5A511CB7A22000508D77 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C73D5A2A1CB7A21F00508D77 /* HYBStarEvaluationViewDemo-iOS */;
+			targetProxy = C73D5A501CB7A22000508D77 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C73D5A371CB7A22000508D77 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C73D5A381CB7A22000508D77 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C73D5A3C1CB7A22000508D77 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C73D5A3D1CB7A22000508D77 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C73D5A561CB7A22000508D77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C73D5A571CB7A22000508D77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C73D5A591CB7A22000508D77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "HYBStarEvaluationViewDemo-iOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "heyuanbo-diynova.com.HYBStarEvaluationViewDemo-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C73D5A5A1CB7A22000508D77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "HYBStarEvaluationViewDemo-iOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "heyuanbo-diynova.com.HYBStarEvaluationViewDemo-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		C73D5A5C1CB7A22000508D77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "HYBStarEvaluationViewDemo-iOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "heyuanbo-diynova.com.HYBStarEvaluationViewDemo-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HYBStarEvaluationViewDemo-iOS.app/HYBStarEvaluationViewDemo-iOS";
+			};
+			name = Debug;
+		};
+		C73D5A5D1CB7A22000508D77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "HYBStarEvaluationViewDemo-iOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "heyuanbo-diynova.com.HYBStarEvaluationViewDemo-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HYBStarEvaluationViewDemo-iOS.app/HYBStarEvaluationViewDemo-iOS";
+			};
+			name = Release;
+		};
+		C73D5A5F1CB7A22000508D77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "HYBStarEvaluationViewDemo-iOSUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "heyuanbo-diynova.com.HYBStarEvaluationViewDemo-iOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "HYBStarEvaluationViewDemo-iOS";
+			};
+			name = Debug;
+		};
+		C73D5A601CB7A22000508D77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "HYBStarEvaluationViewDemo-iOSUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "heyuanbo-diynova.com.HYBStarEvaluationViewDemo-iOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "HYBStarEvaluationViewDemo-iOS";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C73D5A261CB7A21F00508D77 /* Build configuration list for PBXProject "HYBStarEvaluationViewDemo-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C73D5A561CB7A22000508D77 /* Debug */,
+				C73D5A571CB7A22000508D77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C73D5A581CB7A22000508D77 /* Build configuration list for PBXNativeTarget "HYBStarEvaluationViewDemo-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C73D5A591CB7A22000508D77 /* Debug */,
+				C73D5A5A1CB7A22000508D77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C73D5A5B1CB7A22000508D77 /* Build configuration list for PBXNativeTarget "HYBStarEvaluationViewDemo-iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C73D5A5C1CB7A22000508D77 /* Debug */,
+				C73D5A5D1CB7A22000508D77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C73D5A5E1CB7A22000508D77 /* Build configuration list for PBXNativeTarget "HYBStarEvaluationViewDemo-iOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C73D5A5F1CB7A22000508D77 /* Debug */,
+				C73D5A601CB7A22000508D77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C73D5A231CB7A21F00508D77 /* Project object */;
+}

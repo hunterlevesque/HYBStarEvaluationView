@@ -1,0 +1,87 @@
+//
+//  HYBStarEvaluationView.m
+//  HYBStarEvaluationView
+//
+//  Created by heyuanbo on 16/4/8.
+//  Copyright © 2016年 北京自造星球科技有限公司. All rights reserved.
+//
+
+#import "HYBStarEvaluationView.h"
+
+#define DEFAULT_STAR_NUMBER 5
+#define DEFAULT_SCORE_PERCENT 1
+#define STAR_GRAY @"star_gray.png"
+#define STAR_YELLOW @"star_yellow.png"
+
+@interface HYBStarEvaluationView()
+
+@property (nonatomic, strong) UIView * frontView;
+@property (nonatomic, strong) UIView * backgroundView;
+@property (nonatomic, assign) NSInteger numberOfStars;
+
+@end
+
+@implementation HYBStarEvaluationView
+
+- (instancetype)initWithFrame:(CGRect)frame numberOfStars:(NSInteger)numberOfStars {
+    if (self = [super initWithFrame:frame]) {
+        self.numberOfStars = numberOfStars;
+        [self loadView];
+    }
+    return self;
+}
+
+- (void)setScorePercent:(CGFloat)scorePercent {
+    if (_scorePercent == scorePercent) {
+        return;
+    }
+    if (scorePercent > 1) {
+        _scorePercent = 1;
+    } else if (scorePercent < 0) {
+        _scorePercent = 0;
+    } else {
+        _scorePercent = scorePercent;
+    }
+    [self setNeedsLayout];
+}
+
+- (void)setIsVariable:(BOOL)isVariable {
+    if (isVariable == YES) {
+        UITapGestureRecognizer * tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(tapClick:)];
+        [self addGestureRecognizer:tap];
+    }
+}
+
+- (void)loadView {
+    self.scorePercent = 1;
+    self.backgroundView = [self createStarViewWithImage:STAR_GRAY];
+    self.frontView = [self createStarViewWithImage:STAR_YELLOW];
+    [self addSubview:self.backgroundView];
+    [self addSubview:self.frontView];
+}
+
+- (void)layoutSubviews {
+    [super layoutSubviews];
+    self.frontView.frame = CGRectMake(0, 0, self.bounds.size.width * self.scorePercent, self.bounds.size.height);
+}
+
+- (void)tapClick:(UITapGestureRecognizer *)tap {
+    CGPoint point = [tap locationInView:self];
+    CGFloat offset = point.x;
+    self.scorePercent = offset/self.bounds.size.width;
+}
+
+- (UIView *)createStarViewWithImage:(NSString *)imageName {
+    UIView * view = [[UIView alloc]initWithFrame:self.bounds];
+    view.backgroundColor = [UIColor clearColor];
+    view.clipsToBounds = YES;
+    for (NSInteger i = 0; i < self.numberOfStars; i++) {
+        UIImageView * imageView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:imageName]];
+        imageView.frame = CGRectMake(i * self.bounds.size.width/self.numberOfStars, 0, self.bounds.size.width/self.numberOfStars, self.bounds.size.height);
+        imageView.contentMode = UIViewContentModeScaleAspectFit;
+        [view addSubview:imageView];
+    }
+    return view;
+}
+
+@end
