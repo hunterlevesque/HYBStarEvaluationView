@@ -14,19 +14,13 @@
 @end
 
 @implementation ViewController
-{
-    HYBStarEvaluationView * starView;
-}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    starView = [[HYBStarEvaluationView alloc]initWithFrame:CGRectMake(10, 80, 125, 30) numberOfStars:5];
-    starView.scorePercent = 0;
-    starView.isVariable = YES;
+    HYBStarEvaluationView * starView = [[HYBStarEvaluationView alloc]initWithFrame:CGRectMake(10, 80, 125, 30) numberOfStars:5 isVariable:YES];
+    starView.actualScore = 0.2; 
+    starView.fullScore = 1;
     [self.view addSubview:starView];
-}
-
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    NSLog(@"%f",starView.scorePercent);
 }
 
 - (void)didReceiveMemoryWarning {

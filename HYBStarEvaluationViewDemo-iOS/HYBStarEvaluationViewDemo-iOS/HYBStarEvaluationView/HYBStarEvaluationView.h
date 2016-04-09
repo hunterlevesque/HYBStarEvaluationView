@@ -10,10 +10,10 @@
 
 @interface HYBStarEvaluationView : UIView
 
-@property (nonatomic, assign) BOOL isVariable; //星级展示是不是可操作的，默认为YES
-@property (nonatomic, assign) CGFloat scorePercent; //评分的分数，取值范围0~1，默认为1
+@property (nonatomic, assign) CGFloat fullScore; //评分的满分值，默认为1
+@property (nonatomic, assign) CGFloat actualScore; //评分的实际分数，默认为1
 
-//这个函数中的参数numberOfStars是我们总共的星级数，scorePercent是评分分数，scorePercent的取值范围是0~1
-- (instancetype)initWithFrame:(CGRect)frame numberOfStars:(NSInteger)numberOfStars;
+//下面这个函数中的参数numberOfStars是我们总共的星级数，isVariable代表是否可以修改星级
+- (instancetype)initWithFrame:(CGRect)frame numberOfStars:(NSInteger)numberOfStars isVariable:(BOOL)isVariable;
 
 @end

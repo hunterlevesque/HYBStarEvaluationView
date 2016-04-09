@@ -18,42 +18,41 @@
 @property (nonatomic, strong) UIView * frontView;
 @property (nonatomic, strong) UIView * backgroundView;
 @property (nonatomic, assign) NSInteger numberOfStars;
+@property (nonatomic, assign) BOOL isVariable; //星级展示是不是可操作的，默认为YES
 
 @end
 
 @implementation HYBStarEvaluationView
 
-- (instancetype)initWithFrame:(CGRect)frame numberOfStars:(NSInteger)numberOfStars {
+- (instancetype)initWithFrame:(CGRect)frame numberOfStars:(NSInteger)numberOfStars isVariable:(BOOL)isVariable {
     if (self = [super initWithFrame:frame]) {
         self.numberOfStars = numberOfStars;
         [self loadView];
+        if (isVariable == YES) {
+            UITapGestureRecognizer * tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(tapClick:)];
+            [self addGestureRecognizer:tap];
+        }
     }
     return self;
 }
 
-- (void)setScorePercent:(CGFloat)scorePercent {
-    if (_scorePercent == scorePercent) {
+- (void)setActualScore:(CGFloat)actualScore {
+    if (_actualScore == actualScore) {
         return;
     }
-    if (scorePercent > 1) {
-        _scorePercent = 1;
-    } else if (scorePercent < 0) {
-        _scorePercent = 0;
+    if (actualScore > self.fullScore) {
+        _actualScore = self.fullScore;
+    } else if (actualScore < 0) {
+        _actualScore = 0;
     } else {
-        _scorePercent = scorePercent;
+        _actualScore = actualScore;
     }
     [self setNeedsLayout];
 }
 
-- (void)setIsVariable:(BOOL)isVariable {
-    if (isVariable == YES) {
-        UITapGestureRecognizer * tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(tapClick:)];
-        [self addGestureRecognizer:tap];
-    }
-}
-
 - (void)loadView {
-    self.scorePercent = 1;
+    self.fullScore = 1;
+    self.actualScore = 1;
     self.backgroundView = [self createStarViewWithImage:STAR_GRAY];
     self.frontView = [self createStarViewWithImage:STAR_YELLOW];
     [self addSubview:self.backgroundView];
@@ -62,13 +61,13 @@
 
 - (void)layoutSubviews {
     [super layoutSubviews];
-    self.frontView.frame = CGRectMake(0, 0, self.bounds.size.width * self.scorePercent, self.bounds.size.height);
+    self.frontView.frame = CGRectMake(0, 0, self.bounds.size.width * (self.actualScore/self.fullScore), self.bounds.size.height);
 }
 
 - (void)tapClick:(UITapGestureRecognizer *)tap {
     CGPoint point = [tap locationInView:self];
     CGFloat offset = point.x;
-    self.scorePercent = offset/self.bounds.size.width;
+    self.actualScore = offset/self.bounds.size.width * self.fullScore;
 }
 
 - (UIView *)createStarViewWithImage:(NSString *)imageName {
