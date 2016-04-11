@@ -18,8 +18,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     HYBStarEvaluationView * starView = [[HYBStarEvaluationView alloc]initWithFrame:CGRectMake(10, 80, 125, 30) numberOfStars:5 isVariable:YES];
-    starView.actualScore = 0.2; 
-    starView.fullScore = 1;
+    starView.actualScore = 0.3;
+    starView.fullScore = 10;
+    starView.isContrainsHalfStar = YES;
     [self.view addSubview:starView];
 }
 

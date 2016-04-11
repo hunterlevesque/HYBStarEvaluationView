@@ -40,13 +40,7 @@
     if (_actualScore == actualScore) {
         return;
     }
-    if (actualScore > self.fullScore) {
-        _actualScore = self.fullScore;
-    } else if (actualScore < 0) {
-        _actualScore = 0;
-    } else {
-        _actualScore = actualScore;
-    }
+    _actualScore = actualScore;
     [self setNeedsLayout];
 }
 
@@ -61,13 +55,29 @@
 
 - (void)layoutSubviews {
     [super layoutSubviews];
-    self.frontView.frame = CGRectMake(0, 0, self.bounds.size.width * (self.actualScore/self.fullScore), self.bounds.size.height);
+    if (self.actualScore > self.fullScore) {
+        _actualScore = self.fullScore;
+    } else if (self.actualScore < 0) {
+        _actualScore = 0;
+    } else {
+        _actualScore = self.actualScore;
+    }
+    CGFloat scorePercent = self.actualScore/self.fullScore;
+    if (self.isContrainsHalfStar != YES) {
+        scorePercent = [self changeToCompleteStar:scorePercent];
+    }
+    self.frontView.frame = CGRectMake(0, 0, self.bounds.size.width * scorePercent, self.bounds.size.height);
 }
 
 - (void)tapClick:(UITapGestureRecognizer *)tap {
     CGPoint point = [tap locationInView:self];
     CGFloat offset = point.x;
-    self.actualScore = offset/self.bounds.size.width * self.fullScore;
+    CGFloat offsetPercent = offset/self.bounds.size.width;
+    if (self.isContrainsHalfStar != YES) {
+        offsetPercent = [self changeToCompleteStar:offsetPercent];
+    }
+    self.actualScore = offsetPercent * self.fullScore;
+    NSLog(@"%f",self.actualScore);
 }
 
 - (UIView *)createStarViewWithImage:(NSString *)imageName {
@@ -81,6 +91,21 @@
         [view addSubview:imageView];
     }
     return view;
+}
+
+- (CGFloat)changeToCompleteStar:(CGFloat)percent {
+    if (percent <= 0.2) {
+        percent = 0.2;
+    } else if (percent > 0.2 && percent <= 0.4) {
+        percent = 0.4;
+    } else if (percent > 0.4 && percent <= 0.6) {
+        percent = 0.6;
+    } else if (percent > 0.6 && percent <= 0.8) {
+        percent = 0.8;
+    } else {
+        percent = 1.0;
+    }
+    return percent;
 }
 
 @end
