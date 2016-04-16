@@ -78,6 +78,7 @@
     }
     self.actualScore = offsetPercent * self.fullScore;
     NSLog(@"%f",self.actualScore);
+    [self.delegate didChangeStar];
 }
 
 - (UIView *)createStarViewWithImage:(NSString *)imageName {
