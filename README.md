@@ -1,7 +1,8 @@
 # HYBStarEvaluationViewDemo
 a simple tool of star evaluation  一个简单的星级评价的工具
+![image](https://github.com/Hunter-HYB/HYBStarEvaluationView/blob/master/star.gif) 
 
-0.3 使用方法举例：
+0.5 使用方法举例：
 
     HYBStarEvaluationView * starView = [[HYBStarEvaluationView alloc]initWithFrame:CGRectMake(10, 80, 125, 30) numberOfStars:5 isVariable:YES];
     
